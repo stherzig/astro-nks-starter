@@ -1,0 +1,39 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+// Use Astro.glob() to fetch all posts.
+const posts = await Astro.glob("../posts/*.md");
+---
+
+<Layout title="Blog - Astro-NKS-Starter">
+  <h1>Blog</h1>
+
+  <div class="blog-post">
+    {
+      posts.map((post) => (
+        <div>
+          <h3>{post.frontmatter.title}</h3>
+          <p>
+            Written by <strong>{post.frontmatter.author} </strong> on{" "}
+            {new Date(post.frontmatter.date).toLocaleDateString()}
+          </p>
+          <p>{post.frontmatter.excerpt}</p>
+          <a class="btn" href={`/${post.frontmatter.slug}`}>
+            Read More
+          </a>
+        </div>
+      ))
+    }
+  </div>
+</Layout>
+
+<style>
+  h1 {
+    margin: 1rem 0;
+  }
+
+  .btn {
+    background-color: red;
+    color: #fff;
+  }
+</style>

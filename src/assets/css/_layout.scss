@@ -1,0 +1,91 @@
+@mixin flex-container-x {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+@mixin flex-container-y {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.l-header {
+  width: 100%;
+  margin-inline: auto;
+  border-bottom: .5px solid var(--gray-4);
+  background-color: var(--gray-3);
+  padding-block: .5rem;
+
+  @include flex-container-x;
+}
+
+.l-header__logo {
+  margin-left: 1.5rem;
+  margin-top: .5rem;
+  width: 42px;
+  transform: scaleX(-1);
+}
+
+.l-header__nav {
+  margin-right: 1.5rem;
+  @include flex-container-x;
+}
+
+.l-theme-switcher {
+  display: flex;
+  margin-left: 1.5rem;
+}
+
+
+
+.l-main {
+  // max-width: 800px;
+  width: min(100% - 2rem, 50rem);
+  /*800px */
+  width: min(100% - 2rem, 75rem);
+  /*1200px */
+  margin-inline: auto;
+  padding: 1.5rem 0.5rem 5rem;
+
+}
+
+.l-footer {
+  width: 100%;
+  margin-inline: auto;
+  text-align: center;
+  padding: 1rem 0;
+  border-top: .5px solid var(--gray-4);
+  background-color: var(--gray-2);
+
+}
+
+.blog-container {
+  border: 1px solid yellow;
+
+}
+
+.blog-post {
+  @include flex-container-x;
+}
+
+/* sticky footer */
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  /* damit erstreckt sich main ueber die gesamte verfuegbare hoehe */
+}
+
+/* sticky footer */

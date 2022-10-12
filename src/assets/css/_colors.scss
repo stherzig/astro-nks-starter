@@ -1,0 +1,13 @@
+:root {
+  --hue: 204;
+  --saturation: 100%;
+  --lightness: 30%;
+}
+
+.bg-accent {
+  --hue: 120;
+}
+
+.card {
+  background: hsl(var(--hue) var(--saturation) var(--lightness) / .95);
+}
