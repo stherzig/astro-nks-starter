@@ -1,0 +1,46 @@
+---
+import Layout from "../layouts/Layout.astro";
+import exampleData from "../assets/data/example-data.json";
+---
+
+<Layout title="Data via JSON - Astro-NKS-Starter">
+  <main>
+    <h1>Content via JSON</h1>
+
+    {
+      exampleData.map((myData) => (
+        <>
+          <h2>{myData.title}</h2>
+          <div class="card">
+            {myData.elements.map((element) => (
+              <div class="card__body">
+                {element.title}
+                <p>{element.comment}</p>
+
+                <img src={element.image} />
+                <a href={element.link}>{element.title}</a>
+              </div>
+            ))}
+          </div>
+        </>
+      ))
+    }
+  </main>
+</Layout>
+
+<style>
+  h2 {
+    border: 0px solid red;
+  }
+  .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    border: 0px solid green;
+  }
+
+  img {
+    width: 300px;
+  }
+</style>

@@ -1,0 +1,25 @@
+[
+  {
+    "title": "Titel 1",
+    "elements": [
+      {
+        "title": "Überschrift 1",
+        "comment": "Das ist Kommentar 1",
+        "image": "../img/2021-05-19_075025.jpg",
+        "link": "https://www.google.com"
+      },
+      {
+        "title": "Überschrift 2",
+        "comment": "Das ist Kommentar 2",
+        "image": "../img/2021-05-19_075025.jpg",
+        "link": "https://www.google.com"
+      },
+      {
+        "title": "Überschrift 3",
+        "comment": "Das ist Kommentar 3",
+        "image": "../img/2021-05-19_075025.jpg",
+        "link": "https://www.google.com"
+      }
+    ]
+  }
+]

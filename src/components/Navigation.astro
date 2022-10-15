@@ -20,11 +20,17 @@ const currentPath = pathname.slice(1); // remove the first "/"
         >Blog</a
       >
     </li>
+
+    <li>
+      <a class={currentPath === "data/" ? "active" : ""} href="/data/index.html"
+        >Data</a
+      >
+    </li>
   </ul>
 </nav>
 
 <style lang="scss">
   nav a.active {
-    color: var(--cyan-6);
+    color: red !important;
   }
 </style>
