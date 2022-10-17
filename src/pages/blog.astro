@@ -11,7 +11,7 @@ const posts = await Astro.glob("../posts/*.md");
   <div class="blog-post">
     {
       posts.map((post) => (
-        <div>
+        <div class="blog-post-box">
           <h3>{post.frontmatter.title}</h3>
           <p>
             Written by <strong>{post.frontmatter.author} </strong> on{" "}
