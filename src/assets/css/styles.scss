@@ -1,9 +1,15 @@
 @forward "base";
+
+// layout skeleton sticky-footer
 @forward "layout";
 @forward "colors";
 @forward "fonts";
 @forward "typography";
-@forward "spacing";
+
+// utitlities (margin, padding, opacity)
+@forward "utilities";
+
+
 @forward "navigation";
 @forward "responsive";
 @forward "shame";

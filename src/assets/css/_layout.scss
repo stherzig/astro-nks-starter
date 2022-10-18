@@ -1,23 +1,8 @@
-@mixin flex-container-x {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
-}
-
-@mixin flex-container-y {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-}
+@import "mixins.scss";
 
 .l-header {
   width: 100%;
   margin-inline: auto;
-  border-bottom: .5px solid var(--gray-4);
-  background-color: var(--gray-3);
   padding-block: .5rem;
 
   @include flex-container-x;
@@ -54,9 +39,6 @@
   margin-inline: auto;
   text-align: center;
   padding: 1rem 0;
-  border-top: .5px solid var(--gray-4);
-  background-color: var(--gray-2);
-
 }
 
 .blog-container {

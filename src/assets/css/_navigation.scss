@@ -11,7 +11,8 @@ nav {
     list-style-type: none;
 
     a:hover {
-      color: var(--blue-8);
+      color: green;
+      text-decoration: underline;
     }
 
     a:link,
@@ -20,8 +21,8 @@ nav {
       text-decoration: none;
     }
 
-    .nav-item-active a {
-      color: var(--blue-8);
+    a.active {
+      color: yellow;
       text-decoration: underline;
     }
   }
