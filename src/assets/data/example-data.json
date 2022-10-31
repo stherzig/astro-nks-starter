@@ -1,22 +1,22 @@
 [
   {
-    "title": "Titel 1",
+    "title": "Titel des Abschnitts",
     "elements": [
       {
         "title": "Überschrift 1",
-        "comment": "Das ist Kommentar 1",
+        "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse eligendi voluptatibus explicabo sed aut ipsum architecto.",
         "image": "../img/2021-05-19_075025.jpg",
         "link": "https://www.google.com"
       },
       {
         "title": "Überschrift 2",
-        "comment": "Das ist Kommentar 2",
+        "comment": "Velit ex, officia neque cum autem animi similique inventore nemo laudantium id maxime ratione perferendis, tempora corporis?",
         "image": "../img/2021-05-19_075025.jpg",
         "link": "https://www.google.com"
       },
       {
         "title": "Überschrift 3",
-        "comment": "Das ist Kommentar 3",
+        "comment": "officia neque cum autem animi similique inventore nemo laudantium",
         "image": "../img/2021-05-19_075025.jpg",
         "link": "https://www.google.com"
       }

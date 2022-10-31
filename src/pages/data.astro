@@ -11,14 +11,21 @@ import exampleData from "../assets/data/example-data.json";
       exampleData.map((myData) => (
         <>
           <h2>{myData.title}</h2>
-          <div class="card">
+          <div class="c-card__container">
             {myData.elements.map((element) => (
-              <div class="card__body">
-                {element.title}
-                <p>{element.comment}</p>
-
-                <img src={element.image} />
-                <a href={element.link}>{element.title}</a>
+              <div class="c-card">
+                <div class="c-card__title">
+                  <h2>{element.title}</h2>
+                </div>
+                <div class="c-card__body">
+                  <p>{element.comment}</p>
+                </div>
+                <div class="c-card__image">
+                  <img src={element.image} />
+                </div>
+                <div class="c-card__link">
+                  <a href={element.link}>{element.link}</a>
+                </div>
               </div>
             ))}
           </div>
@@ -27,20 +34,3 @@ import exampleData from "../assets/data/example-data.json";
     }
   </main>
 </Layout>
-
-<style>
-  h2 {
-    border: 0px solid red;
-  }
-  .card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    border: 0px solid green;
-  }
-
-  img {
-    width: 300px;
-  }
-</style>
